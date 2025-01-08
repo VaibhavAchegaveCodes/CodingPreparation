@@ -1,0 +1,160 @@
+Step 1
+In this project, you will learn the basics of CSS (Cascading Style Sheets) by building a cafe menu. CSS is the language used to style an HTML document. It describes how HTML elements should be displayed on the screen.
+
+As you learned in the last few steps of the Cat Photo App, there is a basic structure needed to start building your web page. Every HTML document should have a DOCTYPE declaration and html element. The DOCTYPE tells the browser which version of HTML the document is in. And the html element represents the root element which contains all other elements.
+
+Example Code
+<!DOCTYPE html>
+<html lang="en">
+<!--all other elements go here-->
+</html>
+Add the <!DOCTYPE html> tag, and an html element with a lang attribute of en.
+
+<!DOCTYPE html>
+<html lang="en">
+</html>
+
+Step 2
+Add a head element within the html element, so you can add a title element. The title element's text should be Cafe Menu.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cafe Menu></title>
+</head>
+
+</html>
+
+Step 3
+The title is one of several elements that provide extra information not visible on the web page, but it is useful for search engines or how the page gets displayed.
+
+Inside the head element, nest a meta element with an attribute named charset set to the value utf-8 to tell the browser how to encode characters for the page.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cafe Menu</title>
+    <meta charset="utf-8">
+  </head>
+</html>
+
+Step 4
+To prepare to create some actual content, add a body element below the head element.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body>
+  </body>
+</html>
+
+Step 5
+It's time to add some menu content. Add a main element within the existing body element. It will eventually contain pricing information about coffee and desserts offered by the cafe.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body>
+    <main>
+    </main>
+  </body>
+</html>
+
+Step 6
+The name of the cafe is CAMPER CAFE. Add an h1 element within your main element. Give it the name of the cafe in capitalized letters to make it stand out.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body>
+    <main>
+      <h1>CAMPER CAFE</h1>
+    </main>
+  </body>
+</html>
+
+Step 7
+To let visitors know the cafe was founded in 2020, add a p element below the h1 element with the text Est. 2020.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body>
+    <main>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+    </main>
+  </body>
+</html>
+
+Step 8
+There will be two sections on the menu, one for coffees and one for desserts. Add a section element within the main element so you have a place to put all the coffees available.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body>
+    <main>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+      <section>
+      </section>
+    </main>
+  </body>
+</html>
+
+Step 9
+Create an h2 element in the section element and give it the text Coffee.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body>
+    <main>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+      <section>
+        <h2>Coffee</h2>
+      </section>
+    </main>
+  </body>
+</html>
+
+Step 10
+Up until now, you have been limited regarding the presentation and appearance of the content you create. To start taking control, add a style element within the head element.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+      <section>
+        <h2>Coffee</h2>
+      </section>
+    </main>
+  </body>
+</html>
