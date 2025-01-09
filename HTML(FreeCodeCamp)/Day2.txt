@@ -1,0 +1,197 @@
+Step 11
+A link's text must be placed between the opening and closing tags of an anchor (a) element.
+
+Here is an example of a link with the text click here to go to freeCodeCamp.org:
+
+Example Code
+Add the anchor text cat photos to the anchor element. This will become the link's text.
+
+<html>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <h2>Cat Photos</h2>
+      <!-- TODO: Add link to cat photos -->
+      <p>Everyone loves cute cats online!</p>
+      <a href="https://freecatphotoapp.com">cat photos</a>
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+    </main>
+  </body>
+</html>
+
+Step 12
+Add the words See more  before the anchor element and  in our gallery after the anchor element.
+
+<html>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <h2>Cat Photos</h2>
+      <!-- TODO: Add link to cat photos -->
+      <p>Everyone loves cute cats online!</p>
+      See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+    </main>
+  </body>
+</html>
+
+Step 13
+Add p tags to turn See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery. into a paragraph.
+
+<html>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <h2>Cat Photos</h2>
+      <!-- TODO: Add link to cat photos -->
+      <p>Everyone loves cute cats online!</p>
+      <p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery.<p>
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+    </main>
+  </body>
+</html>
+
+Step 14
+Turn the existing text cute cats into an anchor element that links to https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg.
+
+<html>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <h2>Cat Photos</h2>
+      <!-- TODO: Add link to cat photos -->
+      <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+      <p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+    </main>
+  </body>
+</html>
+
+Step 15
+To open links in a new tab, you can use the target attribute on the anchor (a) element.
+
+The target attribute specifies where to open the linked document. target="_blank" opens the linked document in a new tab or window.
+
+Here is the basic syntax for an a element with a target attribute:
+
+Example Code
+<a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
+Add a target attribute with the value _blank to the anchor (a) element's opening tag, so that the link opens in a new tab.
+
+<html>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <h2>Cat Photos</h2>
+      <!-- TODO: Add link to cat photos -->
+      <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+      <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery.</p>
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+    </main>
+  </body>
+</html>
+
+Step 16
+Now that you have added the link you can remove the comment.
+
+<html>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <h2>Cat Photos</h2>
+      
+      <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+      <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+    </main>
+  </body>
+</html>
+
+Step 17
+In previous steps you used an anchor element to turn text into a link. Other types of content can also be turned into a link by wrapping it in anchor tags.
+
+Here is an example of turning an image into a link:
+
+Example Code
+<a href="example-link">
+  <img src="image-link.jpg" alt="A photo of a cat.">
+</a>
+Turn the image into a link by surrounding it with necessary element tags. Use https://freecatphotoapp.com as the anchor's href attribute value.
+
+<html>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <h2>Cat Photos</h2>
+      <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+      <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+     <a href="https://freecatphotoapp.com"> <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    </main>
+  </body>
+</html>
+
+Step 18
+Before adding any new content, you should make use of a section element to separate the cat photos content from the future content.
+
+The section element is used to define sections in a document, such as chapters, headers, footers, or any other sections of the document. It is a semantic element that helps with SEO and accessibility.
+
+Example Code
+<section>
+  <h2>Section Title</h2>
+  <p>Section content...</p>
+</section>
+Take your h2, comment, p, and anchor (a) elements and nest them in a section element.
+
+<html>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section>
+      <h2>Cat Photos</h2>
+      <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+      <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+      <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+    </main>
+  </body>
+</html>
+
+Step 19
+It is time to add a new section. Add a second section element below the existing section element.
+
+<html>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section>
+        <h2>Cat Photos</h2>
+        <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <section>
+      </section>
+      
+    </main>
+  </body>
+</html>
+
+Step 20
+Within the second section element, add a new h2 element with the text Cat Lists.
+
+<html>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section>
+        <h2>Cat Photos</h2>
+        <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+      </section>
+    </main>
+  </body>
+</html>
