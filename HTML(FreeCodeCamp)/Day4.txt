@@ -1,0 +1,121 @@
+Step 31
+Inside the figure element you just added, nest an img element with a src attribute set to https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg.
+
+<figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg">
+          
+        </figure>
+
+
+Step 32
+To improve accessibility of the image you added, add an alt attribute with the text:
+
+Five cats looking around a field.
+
+<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+
+
+Step 33
+After the last img element, add a figcaption element with the text Cats hate other cats.
+
+ <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats hate other cats.</figcaption>
+          
+        </figure>
+
+
+Step 34
+The strong element is used to indicate that some text is of strong importance or urgent.
+
+In the figcaption you just added, indicate that hate is of strong importance by wrapping it in a strong element.
+
+<figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+
+
+Step 35
+It is time to add a new section. Add a third section element below the second section element.
+
+<section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+        </figure>
+      </section>
+      <section>
+      </section>
+
+
+Step 36
+Inside the third section element, add an h2 element with the text:
+
+Cat Form
+
+<section>
+        <h2>Cat Form</h2>
+      </section>
+
+
+Step 37
+Now you will add a web form to collect information from users.
+
+The form element is used to get information from a user like their name, email, and other details.
+
+After the Cat Form heading, add a form element.
+
+<h2>Cat Form</h2>
+        <form>
+        </form>
+
+
+Step 38
+The action attribute indicates where form data should be sent.
+
+Here is an example of a form element with an action attribute:
+
+Example Code
+<form action="/submit-url"></form>
+In the example, action="/submit-url" tells the browser that the form data should be sent to the path /submit-url.
+
+Add an action attribute with the value https://freecatphotoapp.com/submit-cat-photo to the form element.
+
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+        </form>
+
+
+Step 39
+The input element allows you several ways to collect data from a web form. Like img elements, input elements are a void element and do not need closing tags.
+
+Nest an input element in the form element.
+
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+        <input>
+          
+        </form>
+
+
+Step 40
+There are many kinds of inputs you can create using the type attribute. You can easily create a password field, reset button, or a control to let users select a file from their computer.
+
+Create a text field to get text input from a user by adding the type attribute with the value text to the input element.
+
+<input type="text">
+
+
