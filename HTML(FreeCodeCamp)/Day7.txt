@@ -1,0 +1,139 @@
+Step 61
+Add a final checkbox after the previous one with an id attribute value of energetic. The name attribute should be the same as the previous checkbox.
+
+Also add a label element to the right of the new checkbox with text Energetic. Make sure to associate the label element with the new checkbox.
+
+<input id="loving" type="checkbox" name="personality"> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality"> <label for="energetic">Energetic</label>
+
+
+Step 62
+Like radio buttons, form data for selected checkboxes are name / value attribute pairs. While the value attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+
+Add a value attribute to each checkbox. For convenience, set each checkbox's value attribute to the same value as its id attribute.
+
+<fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving"> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+          </fieldset>
+
+
+Step 63
+In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it.
+
+Here is an example of a radio button with the checked attribute:
+
+Example Code
+<input checked type="radio" name="meal" value="breakfast"> Breakfast
+There's no need to set a value to the checked attribute. Instead, just add the word checked to the input element, making sure there is space between it and other attributes.
+
+Make the first radio button and the first checkbox selected by default.
+
+<fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+          </fieldset>
+
+
+Step 64
+The footer element is used to define a footer for a document or section. A footer typically contains information about the author of the document, copyright data, links to terms of use, contact information, and more.
+
+After the main element, add a footer element.
+
+
+</main>
+     <footer>
+     </footer>
+  </body>
+
+
+Step 65
+Nest a p element with the text No Copyright - freeCodeCamp.org within the footer element.
+
+<footer>
+      <p>No Copyright - freeCodeCamp.org</p>
+    </footer>
+
+
+Step 66
+Turn the existing freeCodeCamp.org text into a link by enclosing it in an anchor (a) element. The href attribute should be set to https://www.freecodecamp.org.
+
+      <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+
+
+Step 67
+Notice that everything you've added to the page so far is inside the body element. All page content elements that should be rendered to the page go inside the body element. However, other important information goes inside the head element.
+
+The head element is used to contain metadata about the document, such as its title, links to stylesheets, and scripts. Metadata is information about the page that isn't displayed directly on the page.
+
+Add a head element above the body element.
+
+<html>
+  <head>
+  </head>
+  <body>
+
+
+Step 68
+The title element determines what browsers show in the title bar or tab for the page.
+
+Add a title element within the head element using the text below:
+
+CatPhotoApp
+
+<head>
+    <title>CatPhotoApp</title>
+  </head>
+
+
+Step 69
+Notice that the entire contents of the page are nested within an html element. The html element is the root element of an HTML page and wraps all content on the page.
+
+You can also specify the language of your page by adding the lang attribute to the html element.
+
+Add the lang attribute with the value en to the opening html tag to specify that the language of the page is English.
+
+<html lang="en">
+
+
+Step 70
+All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
+
+<!DOCTYPE html> tells browsers that the document is an HTML5 document which is the latest version of HTML.
+
+Add this declaration as the first line of the code.
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+Step 71
+You can set browser behavior by adding meta elements in the head. Here's an example:
+
+Example Code
+<meta attribute="value">
+Inside the head element, nest a meta element with an attribute named charset. Set to the value to utf-8 which tells the browser how to encode characters for the page.
+
+Note that the meta element is a void element.
+
+With that last change, you have completed the Cat Photo App project. Congratulations!
+
+  <head>
+    <meta charset="utf-8">
+    <title>CatPhotoApp</title>
+  </head>
