@@ -1,0 +1,100 @@
+Step 51
+If you select the Indoor radio button and submit the form, the form data for the button is based on its name and value attributes. Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons.
+
+Add a value attribute to both radio buttons. For convenience, set the button's value attribute to the same value as its id attribute.
+
+          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+
+
+Step 52
+The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.
+
+Nest the Indoor and Outdoor radio buttons within a fieldset element, and don't forget to indent the radio buttons.
+
+<fieldset>        
+          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+        </fieldset>
+
+
+Step 53
+The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.
+
+Add a legend element with the text Is your cat an indoor or outdoor cat? above both of the radio buttons.
+
+<fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+
+
+Step 54
+Next, you are going to add some new form input elements, so add another fieldset element directly below the current fieldset element.
+
+<fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+          </fieldset>
+
+Step 55
+Add a legend element with the text What's your cat's personality? inside the second fieldset element.
+
+<fieldset>
+            <legend>What's your cat's personality?</legend>
+            
+          </fieldset>
+
+Step 56
+Forms commonly use checkboxes for questions that may have more than one answer. The input element with a type attribute set to checkbox creates a checkbox.
+
+Under the legend element you just added, add an input with its type attribute set to checkbox and its text set to:
+
+Loving
+
+<legend>What's your cat's personality?</legend>
+            <input type="checkbox"> Loving
+
+
+Step 57
+Add an id attribute with the value loving to the checkbox input.
+
+
+<input type="checkbox" id="loving"> Loving
+
+
+Step 58
+There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.
+
+Given an input element as below:
+
+Example Code
+<input id="breakfast" type="radio" name="meal" value="breakfast">
+An example of a label element that is associated to this input element is:
+
+Example Code
+<label for="breakfast">Breakfast</label>
+Associate the text Loving with the checkbox by nesting only the text Loving in a label element and giving it an appropriate for attribute.
+
+<input id="loving" type="checkbox"> <label for="loving">Loving</label>
+
+
+Step 59
+Add the name attribute with the value personality to the checkbox input element.
+
+While you won't notice this in the browser, doing this makes it easier for a server to process your web form, especially when there are multiple checkboxes.
+
+<input id="loving" type="checkbox" name="personality"> <label for="loving">Loving</label>
+
+Step 60
+Add another checkbox after the one you just added. The id attribute value should be lazy and the name attribute value should be the same as the last checkbox.
+
+Also add a label element to the right of the new checkbox with the text Lazy. Make sure to associate the label element with the new checkbox using the for attribute.
+
+
+<input id="loving" type="checkbox" name="personality"> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality"> <label for="lazy">Lazy</label>
