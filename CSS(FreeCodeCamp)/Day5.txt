@@ -1,0 +1,139 @@
+Step 41
+Now go ahead and change both the flavor and price class' widths to be 50% again.
+
+.flavor {
+  text-align: left;
+  width: 50%;
+}
+
+.price {
+  text-align: right;
+  width: 50%;
+}
+
+
+Step 42
+Now that you know it works, you can change the remaining article and p elements to match the first set. Start by adding the class item to the other article elements.
+
+<article class="item">
+            <p>Caramel Macchiato</p>
+            <p>3.75</p>
+          </article>
+          <article class="item">
+            <p>Pumpkin Spice</p>
+            <p>3.50</p>
+          </article>
+          <article class="item">
+            <p>Hazelnut</p>
+            <p>4.00</p>
+          </article>
+          <article class="item">
+            <p>Mocha</p>
+            <p>4.50</p>
+          </article>
+
+
+Step 43
+Next, position the other p elements to be on the same line with no space between them.
+
+<article class="item">
+            <p>Caramel Macchiato</p><p>3.75</p>
+          </article>
+          <article class="item">
+            <p>Pumpkin Spice</p><p>3.50</p>
+          </article>
+          <article class="item">
+            <p>Hazelnut</p><p>4.00</p>
+          </article>
+          <article class="item">
+            <p>Mocha</p><p>4.50</p>
+          </article>
+
+
+Step 44
+To complete the styling, add the applicable class names flavor and price to all the remaining p elements.
+
+<article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+
+
+Step 45
+If you make the width of the page preview smaller, you will notice at some point, some of the text on the left starts wrapping around to the next line. This is because the width of the p elements on the left side can only take up 50% of the space.
+
+Since you know the prices on the right have significantly fewer characters, change the flavor class width value to be 75% and the price class width value to be 25%.
+
+.flavor {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+
+Step 46
+You will come back to styling the menu in a few steps, but for now, go ahead and add a second section element below the first for displaying the desserts offered by the cafe.
+
+<section>
+          <h2>Coffee</h2>
+          <article class="item">
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+        </section>
+        <section>
+        </section>
+
+
+Step 47
+Add an h2 element in the new section and give it the text Desserts.
+
+<section>
+          <h2>Desserts</h2>
+        </section>
+
+
+
+Step 48
+Add an empty article element under the Desserts heading. Give it a class attribute with the value item.
+
+<h2>Desserts</h2>
+          <article class="item">
+          </article>
+
+
+Step 49
+Nest two p elements inside your article element. The first one's text should be Donut, and the second's text 1.50. Put both of them on the same line making sure there is no space between them.
+
+<article class="item">
+            <p>Donut</p><p>1.50</p>
+          </article>
+
+
+Step 50
+For the two p elements you just added, add dessert as the value of the first p element's class attribute and the value price as the second p element's class attribute.
+
+<p class="dessert">Donut</p><p class="price">1.50</p>
